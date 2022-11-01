@@ -6,13 +6,13 @@
 package dao;
 
 import java.util.List;
-import model.Coach;
+import model.Seat;
 
 public interface SeatDao {
-    void insert(Coach coach);
-    void update(Coach coach);
-    void delete(Coach coach);
-    Coach getByID(int coachId);
-    List<Coach> getAll();
+    boolean insert(Seat seat);
+    boolean update(Seat seat);
+    boolean delete(Seat seat);
+    Seat getByID(int seatId);
+    List<Seat> getAll();
 
 }
